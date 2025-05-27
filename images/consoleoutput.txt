@@ -1,0 +1,46 @@
+Started by GitHub push by Urgen99
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/ansible-jenkins-pipeline
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/ansible-jenkins-pipeline/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Urgen99/jenkins-docker-ansible.git # timeout=10
+Fetching upstream changes from https://github.com/Urgen99/jenkins-docker-ansible.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/Urgen99/jenkins-docker-ansible.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision cbec5bf0111b576e8c326bd17eacfea55f0d73f4 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f cbec5bf0111b576e8c326bd17eacfea55f0d73f4 # timeout=10
+Commit message: "Update index.html"
+ > git rev-list --no-walk d4d43857fb14829b640753a646783c3d2ebf5e69 # timeout=10
+[ansible-jenkins-pipeline] $ /bin/sh -xe /tmp/jenkins3732637465615454533.sh
++ scp -r /var/lib/jenkins/workspace/ansible-jenkins-pipeline/Dockerfile /var/lib/jenkins/workspace/ansible-jenkins-pipeline/assets /var/lib/jenkins/workspace/ansible-jenkins-pipeline/contact.html /var/lib/jenkins/workspace/ansible-jenkins-pipeline/index.html /var/lib/jenkins/workspace/ansible-jenkins-pipeline/product-details.html /var/lib/jenkins/workspace/ansible-jenkins-pipeline/shop.html /var/lib/jenkins/workspace/ansible-jenkins-pipeline/testwebhook.txt /var/lib/jenkins/workspace/ansible-jenkins-pipeline/vendor root@3.90.179.132:/root/project
++ ansible-playbook /var/lib/jenkins/playbooks/deployment.yaml
+
+PLAY [Build & Deploy Docker Container] *****************************************
+
+TASK [Copy the files to remote server] *****************************************
+changed: [3.90.179.132 -> localhost]
+
+TASK [Stopping the Container] **************************************************
+changed: [3.90.179.132]
+
+TASK [Removing the Container] **************************************************
+changed: [3.90.179.132]
+
+TASK [Removing Docker Image] ***************************************************
+changed: [3.90.179.132]
+
+TASK [Building Docker Image] ***************************************************
+changed: [3.90.179.132]
+
+TASK [Creating the Container] **************************************************
+changed: [3.90.179.132]
+
+PLAY RECAP *********************************************************************
+3.90.179.132               : ok=6    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Finished: SUCCESS
