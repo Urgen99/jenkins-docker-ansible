@@ -10,7 +10,7 @@ Designed and implemented a fully automated Continuous Integration and Continuous
 - **AWS EC2** instances for cloud-based infrastructure
 
 This project automatically deploys an updated Dockerized app whenever code is pushed to GitHub.
-
+- ![Whole Pipeline](images/bfa69396-a498-428e-aec6-ae66ee87bdad.jfif)
 ---
 
 ## 🔁 Pipeline Workflow
@@ -18,7 +18,7 @@ This project automatically deploys an updated Dockerized app whenever code is pu
 ### 1. **📥 GitHub Integration**
 - Source code is hosted on a GitHub repository.
 - Configured **webhooks** to automatically trigger Jenkins jobs on every `push` or `pull` request.
-- ![GitHub Webhook Setup](images/github-webhook.png)
+- ![GitHub Webhook Setup](images/github-webhook.JPG)
 
 ---
 
@@ -28,8 +28,8 @@ This project automatically deploys an updated Dockerized app whenever code is pu
   - Pulls the latest code
   - Executes shell commands to copy files to Docker host and run Ansible playbook
 - Jenkins handles pipeline automation from source to deployment.
-- ![Jenkins Job](images/jenkins-job.png)
-- ![Jenkins Console Output](images/jenkins-console.png)
+- ![Jenkins Job](images/1.jpg)
+- ![Jenkins Console Output](images/buildingimage.JPG)
 
 ---
 
@@ -41,8 +41,8 @@ This project automatically deploys an updated Dockerized app whenever code is pu
   - Image build from Dockerfile
   - Container creation and exposure on port 80
 - Inventory configured to use remote interpreter via virtualenv due to Python environment restrictions (PEP 668).
-- ![Ansible Hosts](images/ansible-hosts.png)
-- ![Ansible Playbook](images/ansible-playbook.png)
+- ![Ansible Playbook](images/deploymentimg.JPG)
+- ![Ansible Hosts](images/yamlfiledeployment.JPG)
 
 ---
 
@@ -50,8 +50,8 @@ This project automatically deploys an updated Dockerized app whenever code is pu
 - Docker is installed on a separate EC2 instance.
 - The application is served inside a container using an NGINX base image.
 - Docker image built via Ansible and deployed on port `80`.
-- ![Docker Running](images/docker-running.png)
-- ![Web App](images/deployed-site.png)
+- ![Docker Running](images/dockerserver.JPG)
+- ![Web App](images/website.JPG)
 
 ---
 
@@ -63,8 +63,7 @@ This project automatically deploys an updated Dockerized app whenever code is pu
   - Port `8080` (Jenkins)
   - Port `80` (Web App)
 - SSH key-based access set up between Jenkins and Docker hosts.
-- ![AWS Security Group](images/aws-sg.png)
-- ![AWS Instances](images/aws-ec2.png)
+- ![AWS Instances](images/2.JPG)
 
 ---
 
