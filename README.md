@@ -28,7 +28,7 @@ This project automatically deploys an updated Dockerized app whenever code is pu
   - Pulls the latest code
   - Executes shell commands to copy files to Docker host and run Ansible playbook
 - Jenkins handles pipeline automation from source to deployment.
-- ![Jenkins Job](images/1.jpg)
+- ![Jenkins Job](images/1.JPG)
 - ![Jenkins Console Output](images/buildingimage.JPG)
 
 ---
