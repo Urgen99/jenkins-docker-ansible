@@ -64,6 +64,7 @@ This project automatically deploys an updated Dockerized app whenever code is pu
   - Port `80` (Web App)
 - SSH key-based access set up between Jenkins and Docker hosts.
 - ![AWS Instances](images/2.JPG)
+- ![AWS Instances](images/pipelineworking.JPG)
 
 ---
 
