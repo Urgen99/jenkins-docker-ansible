@@ -106,28 +106,7 @@ This project automatically deploys an updated Dockerized app whenever code is pu
 - Jenkins orchestrates Ansible, which remotely deploys to Docker
 - Containerized app live on AWS in under a minute
 
-> 🔗 Want to collaborate or provide feedback? Feel free to connect on [LinkedIn](https://www.linkedin.com/) or fork this project!
+> 🔗 Want to collaborate or provide feedback? Feel free to connect on [LinkedIn](https://www.linkedin.com/in/urgen-tamang-9a3687257/) or fork this project!
 
 ---
 
-## 📸 Screenshots
-
-> Replace these placeholder paths with your actual image file names under a `./images/` folder.
-
-- GitHub Webhook Setup  
-  ![](images/github-webhook.png)
-
-- Jenkins Job Console Output  
-  ![](images/jenkins-console.png)
-
-- Ansible Inventory Setup  
-  ![](images/ansible-hosts.png)
-
-- Docker Container Running  
-  ![](images/docker-running.png)
-
-- Deployed Website  
-  ![](images/deployed-site.png)
-
-- AWS EC2 Instances  
-  ![](images/aws-ec2.png)
